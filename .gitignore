@@ -21,3 +21,12 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Ignorer les fichiers de setup Windows
+src/assets/release/
+
+./src/assets/release/fiistore.io-Setup-0.0.1.exe
+
+# Ignorer les fichiers DMG pour macOS
+./src/assets/release/fiistore.io-0.0.1.dmg
+

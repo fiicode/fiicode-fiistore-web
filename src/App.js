@@ -25,7 +25,7 @@ function App() {
         <div className="container--lg border--bottom pb3">
           <img className="logo mb1 reveal-on-scroll is-revealin" src={logoIcon} alt="Carta" width="100" />
           <h1 className="mb1">fiistore.io</h1>
-          <img className="mb3" src={dashboard} alt="Carta" />
+          <img className="mb3 dashboard" src={dashboard} alt="Carta" />
           <div>
               <img className="" src={destkopIcon} alt="Carta" width="100" />
               <p className="mb1">Télécharger pour ordinateur</p>
