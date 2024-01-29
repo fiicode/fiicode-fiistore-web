@@ -1,0 +1,113 @@
+.page-header {
+  min-height: 100vh;
+  max-height: 999px;
+  padding: 0;
+  /* color: #FFFFFF; */
+  position: relative;
+  overflow: hidden;
+}
+.page-header .page-header-image {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.login-page .page-header:before, .profile-page .page-header:before {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  left: 0;
+  top: 0;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.page-header[filter-color="orange"] {
+  /* background: rgba(44, 44, 44, 0.2); */
+  /* background: -webkit-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6)); */
+  /* background: -o-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6)); */
+  /* background: -moz-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6)); */
+  /* background: linear-gradient(0deg, rgb(28 26 26 / 58%), rgb(7 7 7 / 66%)); */
+  background: linear-gradient(0deg, rgba(28, 26, 26, 0.62), rgb(195 195 195));
+}
+
+.dark .page-header[filter-color="orange"] {
+    /* background: rgba(44, 44, 44, 0.2); */
+    /* background: -webkit-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6)); */
+    /* background: -o-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6)); */
+    /* background: -moz-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6)); */
+    /* background: linear-gradient(0deg, rgb(28 26 26 / 58%), rgb(7 7 7 / 66%)); */
+    background: linear-gradient(0deg, rgba(28, 26, 26, 0.62), rgb(0 0 0))
+}
+
+
+.page-header>.content {
+  margin-top: 3%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.now-ui-icons {
+  display: inline-block;
+  font: normal normal normal 32px/1 'Nucleo Outline';
+  speak-as: none;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.now-ui-icons.spin {
+  -webkit-animation: nc-icon-spin 2s infinite linear;
+  -moz-animation: nc-icon-spin 2s infinite linear;
+  animation: nc-icon-spin 2s infinite linear;
+}
+
+
+.now-ui-icons.spin {
+  -webkit-animation: nc-icon-spin 2s infinite linear;
+  -moz-animation: nc-icon-spin 2s infinite linear;
+  animation: nc-icon-spin 2s infinite linear;
+}
+
+.now-ui-icons.spin2 {
+    -webkit-animation: nc-icon-spin 20s infinite linear;
+    -moz-animation: nc-icon-spin 20s infinite linear;
+    animation: nc-icon-spin 20s infinite linear;
+}
+
+@-webkit-keyframes nc-icon-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes nc-icon-spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@keyframes nc-icon-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
