@@ -56,7 +56,6 @@ const Reg = () => {
         const uiConfig = {
             // signInSuccessUrl: '#',
             signInOptions: [
-                // Add your sign-in options (e.g., Google, Facebook) here
                 firebase.auth.GoogleAuthProvider.PROVIDER_ID,
                 firebase.auth.PhoneAuthProvider.PROVIDER_ID,
             ],
