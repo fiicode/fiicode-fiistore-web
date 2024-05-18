@@ -105,7 +105,8 @@ const Reg = () => {
             const data = new FormData(form);
             const user = await registerUserByEmail(data);
             setUserToken(user)
-            window.location.href = `fiistore://auth?token=${user?.token}`
+            // https://fiddle.electronjs.org/launch?target=electron/v28.2.2/
+            window.location.href = `fiistore-io://auth?token=${user?.token}`
         } catch (e) { 
             const firstErrorMessage = e?.errors?.find(error => error.message)?.message;
             if (firstErrorMessage) {
@@ -130,8 +131,8 @@ const Reg = () => {
             const data = new FormData(form);
             const user = await registerUserByPhone(data);
             setUserToken(user)
-            //fiistore://auth?token=KL6nb2HVD2QN4rRcD3UcbIpsgfmdpV82E6DkYhS28sU
-            window.location.href = `fiistore://auth?token=${user?.token}`
+            //fiistore-io://auth?token=KL6nb2HVD2QN4rRcD3UcbIpsgfmdpV82E6DkYhS28sU
+            window.location.href = `fiistore-io://auth?token=${user?.token}`
         } catch (e) { 
             const firstErrorMessage = e?.errors?.find(error => error.message)?.message;
             if (firstErrorMessage) {

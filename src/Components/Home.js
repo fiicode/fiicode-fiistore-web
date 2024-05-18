@@ -14,8 +14,8 @@ import securityIcon from '../assets/img/security.svg'
 import dataIcon from '../assets/img/data.svg'
 import textIcon from '../assets/img/text.svg'
 
-import winApp from '../assets/release/fiistore.io-Setup-0.0.1.exe'
-import macApp from '../assets/release/fiistore.io-0.0.1.dmg'
+import winApp from '../assets/release/fiistore-Setup-0.0.1.zip'
+import macApp from '../assets/release/fiistore-0.0.1.zip'
 const Home = () => {
     return (
         <>
